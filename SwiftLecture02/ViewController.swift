@@ -60,9 +60,9 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-        func add(first:Int,second:Int)->Int{
+    func add(first:Int,second:Int)->Int{
             return first+second
-        }
+    }
 }
 
 
