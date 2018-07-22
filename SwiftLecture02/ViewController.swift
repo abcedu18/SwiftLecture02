@@ -16,10 +16,32 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        print("Hello,Swift!")
+        
         var name:String="Tao"
         let fullName=name+"Feng"
         
         lbName?.text=fullName
+        
+        let english=["A","B","C"]
+        var ints:[Int]=[2,1,3]
+        var floats:Array <Float>=Array(repeating:0,count:5)
+        
+        ints.sort()
+        
+        for index in 0..<3{
+            print("\([english[index])")
+        }
+
+        for str in english{
+            print(str)
+        }
+        
+        let 吧=[1:"A",2:"B",3:"C"]
+        for(a,b) in 吧{
+            print("\(a):\(b)")
+        }
+    
     }
 
     override func didReceiveMemoryWarning() {
