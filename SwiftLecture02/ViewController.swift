@@ -29,26 +29,36 @@ class ViewController: UIViewController {
         
         ints.sort()
         
-        for index in 0..<3{
-            print("\([english[index])")
-        }
-
-        for str in english{
-            print(str)
-        }
+//        for index in 0..<3{
+//            print("\([english[index])")
+//        }
+//
+//        for str in english{
+//            print(str)
+//        }
+        //Dictionary
+        let dic=[1:"A",2:"B",3:"C"]
         
-        let 吧=[1:"A",2:"B",3:"C"]
-        for(a,b) in 吧{
+        for(a,b) in dic{
             print("\(a):\(b)")
         }
-    
-    }
-
+        let dicSorted=dic.sorted(by:{$0.value<$1.value})
+        
+        for(a,b) in dicSorted{
+            print("\(a):\(b)")
+        }
+        var times:Int=0
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false, block: {smalltimer in
+            times=times+1
+            print("timer:\(smalltimer.isValid)")})
+            
+        
+        
+   }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
+
 
