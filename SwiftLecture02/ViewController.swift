@@ -63,9 +63,6 @@ class ViewController: UIViewController {
         func add(first:Int,second:Int)->Int{
             return first+second
         }
-        
-//      override func viewWillAppear(<#T##animated: Bool##Bool#>){
-//      }
 }
 
 
