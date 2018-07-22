@@ -50,15 +50,22 @@ class ViewController: UIViewController {
         var times:Int=0
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false, block: {smalltimer in
             times=times+1
-            print("timer:\(smalltimer.isValid)")})
+            print("timer:\(smalltimer.isValid)")
+        })
             
+        _ = self.add(first:1, second:2)
         
-        
-   }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+        func add(first:Int,second:Int)->Int{
+            return first+second
+        }
+        
+//      override func viewWillAppear(<#T##animated: Bool##Bool#>){
+//      }
 }
 
 
